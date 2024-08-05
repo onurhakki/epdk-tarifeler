@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
+    <style>
+
+footer {    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: smaller;
+
+}
+
+.container {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+
+}
+
+.bar {
+    width: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.bar.fill1 {
+  animation: fill-1 4s infinite 
+}
+.bar.fill2 {
+  animation: fill-2 4s infinite
+}
+
+.bar.fill1.p2 {animation-delay: 500ms;}
+.bar.fill2.p2 {animation-delay: 500ms;}
+
+.bar.fill1.p3 {animation-delay: 1s;}
+.bar.fill2.p3 {animation-delay: 1s;}
+
+.bar.fill1.p4 {animation-delay: 1500ms;}
+.bar.fill2.p4 {animation-delay: 1500ms;}
+
+.bar.fill1.p5 {animation-delay: 2s;}
+.bar.fill2.p5 {animation-delay: 2s;}
+
+.bar.fill1.p6 {animation-delay: 2500ms;}
+.bar.fill2.p6 {animation-delay: 2500ms;}
+
+.bar.fill1.p7 {animation-delay: 3s;}
+.bar.fill2.p7 {animation-delay: 3s;}
+
+.bar.fill1.p8 {animation-delay: 3500ms;}
+.bar.fill2.p8 {animation-delay: 3500ms;}
+
+
+@keyframes fill-1 {
+5% { height: 69px; background-color:  rgb(255,255,255);}
+10% { height: 41px; background-color: rgb(255,255,255);}
+15% { height: 19px; background-color: rgb(255,255,255);}
+20% { height: 5px; background-color:  rgb(255,255,255);}
+25% { height: 0px; background-color:  rgb(255,255,255);}
+30% { height: 5px; background-color:  rgb(255,255,255);}
+35% { height: 19px; background-color: rgb(255,255,255);}
+40% { height: 41px; background-color: rgb(255,255,255);}
+45% { height: 69px; background-color: rgb(255,255,255);}
+0% { height: 100px; background-color: rgb(255,255,255);}
+50% { height: 100px; background-color:rgb(255,255,255);}
+55% { height: 100px; background-color:rgb(255,255,255);}
+60% { height: 100px; background-color:rgb(255,255,255);}
+65% { height: 100px; background-color:rgb(255,255,255);}
+70% { height: 100px; background-color:rgb(255,255,255);}
+75% { height: 100px; background-color:rgb(255,255,255);}
+80% { height: 100px; background-color:rgb(255,255,255);}
+85% { height: 100px; background-color:rgb(255,255,255);}
+90% { height: 100px; background-color:rgb(255,255,255);}
+95% { height: 100px; background-color:rgb(255,255,255);}
+100% {height: 100px; background-color:rgb(255,255,255);}
+
+}
+@keyframes fill-2 {
+0% { height: 0px; background-color:   rgb(34, 139, 34);}
+5% { height: 31px; background-color:  rgb(34, 139, 34)}
+10% { height: 59px; background-color: rgb(34, 139, 34);}
+15% { height: 81px; background-color: rgb(34, 139, 34);}
+20% { height: 95px; background-color: rgb(34, 139, 34);}
+25% { height: 100px; background-color:rgb(34, 139, 34)n;}
+30% { height: 95px; background-color: rgb(34, 139, 34);}
+35% { height: 81px; background-color: rgb(34, 139, 34);}
+40% { height: 59px; background-color: rgb(34, 139, 34);}
+45% { height: 31px; background-color: rgb(34, 139, 34);}
+50% { height: 0px; background-color:  rgb(34, 139, 34)}
+55% { height: 31px; background-color: rgb(34, 139, 34);}
+60% { height: 59px; background-color: rgb(34, 139, 34);}
+65% { height: 81px; background-color: rgb(34, 139, 34);}
+70% { height: 95px; background-color: rgb(34, 139, 34);}
+75% { height: 100px; background-color:rgb(34, 139, 34)n;}
+80% { height: 95px; background-color: rgb(34, 139, 34);}
+85% { height: 81px; background-color: rgb(34, 139, 34);}
+90% { height: 59px; background-color: rgb(34, 139, 34);}
+95% { height: 31px; background-color: rgb(34, 139, 34);}
+100% { height: 0px; background-color: rgb(34, 139, 34);}
+
+}
+
+
+header {
+    font-size: larger;
+    margin: 35px;
+}
+
+.info {
+    margin: 25px;
+}
+
+
+
+</style>
+</head>
+<body>
+<footer >        
+        <div class="container">
+            <div>
+                <div class="bar fill1 p1"></div>
+                <div class="bar fill2 p1"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p2"></div>
+                <div class="bar fill2 p2"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p3"></div>
+                <div class="bar fill2 p3"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p4"></div>
+                <div class="bar fill2 p4"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p5"></div>
+                <div class="bar fill2 p5"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p6"></div>
+                <div class="bar fill2 p6"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p7"></div>
+                <div class="bar fill2 p7"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p8"></div>
+                <div class="bar fill2 p8"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p1"></div>
+                <div class="bar fill2 p1"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p2"></div>
+                <div class="bar fill2 p2"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p3"></div>
+                <div class="bar fill2 p3"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p4"></div>
+                <div class="bar fill2 p4"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p5"></div>
+                <div class="bar fill2 p5"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p6"></div>
+                <div class="bar fill2 p6"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p7"></div>
+                <div class="bar fill2 p7"></div>
+            </div>
+            <div>
+                <div class="bar fill1 p8"></div>
+                <div class="bar fill2 p8"></div>
+            </div>
+
+
+        </div>
+        <br><br>
+
+            Veriler görselleştirme amaçlı kullanılmaktadır. |
+            Tasarlayan <a href="https://onurhakki.github.io/cv/" target="_blank" rel="noopener noreferrer">Onur Hakkı Eyüboğlu</a>
+            | İletişim <a>eyubogluo@itu.edu.tr</a>
+
+
+        </footer>
+</body>
+</html>
