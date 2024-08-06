@@ -48,7 +48,7 @@ st.set_page_config(
 )
 
 st.markdown("## EPDK Toplu Tarifeler ")
-
+st.markdown("Veri kaynağı: https://www.epdk.gov.tr/Detay/Icerik/3-1327/elektrik-faturalarina-esas-tarife-tablolari")
 df, given_columns, columns_dict, compare = load_data()
 
 columns = st.selectbox("Tarifeler (Tek zamanlı tarife, üç zamanlı tarife ve dağıtım bedeli)",[
