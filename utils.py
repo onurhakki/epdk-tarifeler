@@ -56,7 +56,7 @@ def rgb2hex(x):
     return "#{:02x}{:02x}{:02x}".format(r,g,b)
 
 
-def plot_frame(frame, birim):
+def plot_frame(frame, birim, stepwise):
     fig = make_subplots(
         rows=1, cols=1,
         # subplot_titles=["(TWh)"],
@@ -88,6 +88,7 @@ def plot_frame(frame, birim):
             textfont_color= ["red" if i > 0 else "green" for nth, i in enumerate(diff.tolist())],
     textposition="top center" if th == 2 else "bottom center",
         mode="lines+text+markers",
+        line_shape = "hv" if stepwise else "linear",
 
 
         # width = 500
@@ -126,7 +127,7 @@ yaxis_title = birim,
 
     return fig
 
-def plot_compare(frame, birim):
+def plot_compare(frame, birim, stepwise):
     fig = make_subplots(
         rows=1, cols=1,
         # subplot_titles=["(TWh)"],
@@ -148,6 +149,8 @@ def plot_compare(frame, birim):
             name= val,
             marker_color=colors[val],
         mode="lines+markers",
+        line_shape = "hv" if stepwise else "linear",
+
         ),
         row=1, col=1
         )
