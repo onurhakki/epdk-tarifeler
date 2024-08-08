@@ -109,10 +109,13 @@ with birim_columns[1]:
 
         st.write("kr/kWh")
 
+
+stepwise = st.sidebar.checkbox("Step-wise", False)
+
 if fselected.shape[1] == 3:
-    fig = plot_frame(fselected.iloc[:, :2], birim_name)
+    fig = plot_frame(fselected.iloc[:, :2], birim_name, stepwise)
 elif fselected.shape[1] == 4:
-    fig = plot_frame(fselected.iloc[:, :3], birim_name)
+    fig = plot_frame(fselected.iloc[:, :3], birim_name, stepwise)
 
 
 st.markdown(f"### {selected_name}")
