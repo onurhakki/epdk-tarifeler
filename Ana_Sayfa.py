@@ -79,6 +79,8 @@ with birim_columns[1]:
 
         st.write("kr/kWh")
 
+stepwise = st.sidebar.checkbox("Step-wise", False)
+
 if len(columns) == 1:
     export = compare[columns[0]].unstack("Tarih")
     export.columns = [i.split()[0] for i in export.columns]
@@ -125,7 +127,7 @@ seçilenler = st.multiselect("Tarife grubu seçiniz. (Maks. : 6 adet)", export.i
     #    'Şehit Aileleri ve Muharip Malul Gaziler | Tek | AG'
                             ], max_selections=6, )
 if len(seçilenler) != 0:
-    fig = plot_compare(export.loc[seçilenler].T, birim_name)
+    fig = plot_compare(export.loc[seçilenler].T, birim_name, stepwise)
     st.plotly_chart(fig, use_container_width=True)
 
 
